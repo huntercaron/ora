@@ -60,3 +60,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* styling for this site, we should probably use a style lib like styled components maybe */
+
+button {
+  margin: 15px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  display: block;
+}
+
+div {
+  margin: 10px;
+}
