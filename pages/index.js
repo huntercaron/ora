@@ -30,7 +30,12 @@ function Home() {
             <Head>
                 <title>Ora</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+                />
             </Head>
+
             <h1>this is a Heading on the index page</h1>
 
             <div>
