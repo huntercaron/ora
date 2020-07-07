@@ -3,9 +3,11 @@ import * as Tone from "tone"
 import { ToggleExample } from "../components/toggleExample"
 
 export function ButtonExample(props) {
+    // this is a component, its scoped to itself and can be re-used infinite times
+
     // this takes the values out of the props for use
     const { startNote } = props
-    // this is a component, its scoped to itself and can be re-used infinite times
+
     // this function triggers when 'onClick' on the button is triggered
     const playSound = () => {
         Tone.start()
