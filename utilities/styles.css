@@ -5,6 +5,7 @@
 *:after {
   -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
+  touch-action: manipulation;
 }
 
 html {
