@@ -38,7 +38,7 @@ function Home() {
                 />
             </Head>
 
-            <h1>this is a Heading on the index page</h1>
+            <h1>PeePee PooPoo</h1>
 
             <div>
                 <ToggleExample />
