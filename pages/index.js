@@ -40,6 +40,8 @@ function Home() {
 
             <div>
                 <ToggleExample />
+
+                {/* With component props, we can easily made each control do something slightly different */}
                 <ButtonExample startNote={"B2"} />
                 <ButtonExample startNote={"C4"} />
             </div>
