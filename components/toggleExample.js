@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react"
 import * as Tone from "tone"
+import { motion } from "framer-motion"
 
 export function ToggleExample() {
     // useState is where you store states of the component
@@ -26,9 +27,13 @@ export function ToggleExample() {
     }
 
     return (
-        <div style={{ border: "1px solid #eee" }}>
+        <motion.div
+            animate={{
+                border: active ? "5px solid #dc9d0f" : "1px solid #eee",
+            }}
+        >
             This is a component with a button
             <button onClick={handleToggle}>Turn {active ? "Off" : "On"}</button>
-        </div>
+        </motion.div>
     )
 }
