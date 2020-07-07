@@ -19,8 +19,8 @@ export function ToggleExample() {
 
     useEffect(() => {
         Tone.start()
-        if (active) osc.current.start()
-        else osc.current.stop()
+        if (active) osc.current.start(Tone.context.currentTime)
+        else osc.current.stop(Tone.context.currentTime)
     }, [active])
     // this ^ code runs whenever 'active' changes
 

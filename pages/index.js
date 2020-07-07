@@ -14,7 +14,7 @@ export function ButtonExample(props) {
         var synth = new Tone.Synth().toMaster()
 
         //play a middle 'C' for the duration of an 8th note
-        synth.triggerAttackRelease(startNote, "8n")
+        synth.triggerAttackRelease(startNote, "8n", Tone.context.currentTime)
     }
 
     return (
