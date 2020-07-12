@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-import Tone from "tone"
+import * as Tone from "tone"
 import { motion } from "framer-motion"
 import styles from "./drumMachine.module.css"
 
