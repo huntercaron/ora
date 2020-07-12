@@ -3,6 +3,7 @@ import * as Tone from "tone"
 import { motion } from "framer-motion"
 import styles from "./drumMachine.module.css"
 
+// constants
 const notes = ["hihat", "kick", "perc", "snare"]
 const columns = 12
 const columnArray = [...new Array(columns)].map((_, i) => i)
@@ -15,6 +16,7 @@ const samples = notes.reduce((res, sample) => {
     return res
 }, {})
 
+// individual note component
 function Note(props) {
     const { active, isColumnActive, onTap } = props
 
@@ -33,6 +35,7 @@ function Note(props) {
     )
 }
 
+// the grid
 export function DrumMachine() {
     const drum = useRef()
     const [activeNotes, setActiveNotes] = useState(activeNotesDefault)
