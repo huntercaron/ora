@@ -71,7 +71,7 @@ export function DrumMachine() {
     }
 
     return (
-        <motion.div
+        <div
             onClick={() => {
                 Tone.start()
                 Tone.Transport.start()
@@ -92,6 +92,6 @@ export function DrumMachine() {
                     )
                 })
             })}
-        </motion.div>
+        </div>
     )
 }
