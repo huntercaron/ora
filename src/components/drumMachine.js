@@ -30,7 +30,7 @@ function Note(props) {
                 background: active ? "rgba(0,0,0,255)" : "rgba(0,0,0,0)",
             }}
             whileTap={{ scale: 0.9 }}
-            whileTap={{ scale: 1.15 }}
+            whileHover={{ scale: 1.15 }}
         />
     )
 }
