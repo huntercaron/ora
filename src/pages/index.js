@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { DrumMachine } from "../components/DrumMachine"
+import { DrumMachine } from "../components/drumMachine"
 
 function Home() {
     return (

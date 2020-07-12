@@ -16,7 +16,5 @@
         "ress": "^2.0.4",
         "tone": "^13.8.25"
     },
-    "devDependencies": {
-        "next-build-id": "^3.0.0"
-    }
+    "devDependencies": {}
 }
