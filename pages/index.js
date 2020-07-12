@@ -13,9 +13,7 @@ function Home() {
                 />
             </Head>
 
-            <div>
-                <DrumMachine />
-            </div>
+            <DrumMachine />
         </div>
     )
 }
