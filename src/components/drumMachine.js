@@ -16,6 +16,13 @@ const samples = notes.reduce((res, sample) => {
     return res
 }, {})
 
+const transition = {
+    type: "spring",
+    damping: 10,
+    stiffness: 200,
+    mass: 0.8,
+}
+
 // individual note component
 function Note(props) {
     const { active, isColumnActive, onTap } = props
@@ -29,6 +36,7 @@ function Note(props) {
                 scale: isColumnActive ? 1.15 : 1,
                 background: active ? "rgba(0,0,0,255)" : "rgba(0,0,0,0)",
             }}
+            transition={transition}
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.15 }}
         />
