@@ -36,7 +36,7 @@ function Note(props) {
 }
 
 // the grid
-export function DrumMachine() {
+export function DrumMachine2() {
     const drum = useRef()
     const [activeNotes, setActiveNotes] = useState(activeNotesDefault)
     const [activeColumn, setActiveColumn] = useState(-1)
@@ -51,13 +51,13 @@ export function DrumMachine() {
     useEffect(() => {
         const loop = new Tone.Sequence(
             (time, col) => {
+                setActiveColumn(col)
                 notes.forEach((_, i) => {
                     if (activeNotes[col][i]) {
                         var vel = Math.random() * 0.5 + 0.5
                         drum.current.get(notes[i]).start(time, 0, "8n", 0, vel)
                     }
                 })
-                Tone.Draw.schedule(() => setActiveColumn(col), time)
             },
             columnArray,
             "8n"
@@ -73,15 +73,12 @@ export function DrumMachine() {
         })
     }
 
-    const setup = () => {
-        Tone.start()
-        Tone.Draw.anticipation = 2
-        Tone.Transport.start()
-    }
-
     return (
         <div
-            onClick={setup}
+            onClick={() => {
+                Tone.start()
+                Tone.Transport.start()
+            }}
             className={styles.machine}
             style={{ grid: `repeat(${notes.length}, 50px) / auto-flow` }}
         >

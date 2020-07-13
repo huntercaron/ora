@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { DrumMachine } from "../components/drumMachine"
+import { DrumMachine2 } from "../components/drumMachine2"
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             </Head>
 
             <DrumMachine />
+            {/* <DrumMachine2 /> */}
         </div>
     )
 }
