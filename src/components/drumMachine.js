@@ -43,6 +43,18 @@ function Note(props) {
     )
 }
 
+// start/stop
+
+function Start() {
+    return (
+        <div
+            onClick={setup}
+            className={styles.startstop}
+        >
+        </div>
+    )
+}
+
 // the grid
 export function DrumMachine() {
     const drum = useRef()
